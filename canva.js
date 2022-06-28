@@ -37,3 +37,28 @@ ctx.beginPath();
 ctx.arc(startx, starty, 30, 0, 2 * Math.PI); // Creamos un circulo para la cabeza. el orden de los parámetros son: posición x, posición y ancho y alto
 ctx.stroke();
 
+ctx.beginPath(); // Cuerpo
+ctx.moveTo(startx, starty+20);
+ctx.lineTo(startx, starty+100);
+ctx.stroke();
+
+ctx.beginPath(); // Dibujar mano izq
+ctx.moveTo(startx, starty+25);
+ctx.lineTo(startx-30, starty+60);
+ctx.stroke();
+
+ctx.beginPath(); // Dibujar mano der
+ctx.moveTo(startx, starty+25);
+ctx.lineTo(startx+30, starty+60);
+ctx.stroke();
+
+ctx.beginPath(); // Pie Izq
+ctx.moveTo(startx, starty+100);
+ctx.lineTo(startx-30, starty+150);
+ctx.stroke();
+
+ctx.beginPath(); // Pie der
+ctx.moveTo(startx, starty+100);
+ctx.lineTo(startx+30, starty+150);
+ctx.stroke();
+//sdfsdf
